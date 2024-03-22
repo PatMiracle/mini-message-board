@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+  </head>
+  <body>
+    <%- include("./partials/nav") %>
+    <main>
+      <div class="center">
+        <form action="/new" method="POST">
+          <h2 class="title">Write New Message</h2>
+          <label for="name">Enter Name</label>
+          <input type="text" name="name" id="name" />
+          <label for="message">Enter Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button type="submit">Post</button>
+        </form>
+      </div>
+    </main>
+    <%- include("./partials/footer") %>
+  </body>
+</html>

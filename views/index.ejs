@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+  </head>
+  <body>
+    <%- include("./partials/nav") %>
+    <main>
+      <section class="center">
+        <h2 class="title">Posts</h2>
+        <div class="posts">
+          <% if(messages) { messages.forEach(({name, message, time}) => {%>
+          <div class="post">
+            <h3 class="name"><%= name %></h3>
+            <p><%= message %></p>
+            <p class="time">
+              <i><%= new Date(time).toDateString() %></i>
+            </p>
+          </div>
+          <% })} %>
+        </div>
+      </section>
+    </main>
+    <%- include("./partials/footer") %>
+  </body>
+</html>
