@@ -8,6 +8,10 @@
     <main>
       <div class="center">
         <form action="/new" method="POST">
+          <% if(error){ %>
+          <p class="error"><%= error %></p>
+          <% }%>
+          <p></p>
           <h2 class="title">Write New Message</h2>
           <label for="name">Enter Name</label>
           <input type="text" name="name" id="name" />
