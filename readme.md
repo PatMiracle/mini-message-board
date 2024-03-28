@@ -3,10 +3,6 @@
 Project from [The Odin Project Node.js Course](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs).
 
 
-<video controls>
-    <source src="demo.mp4" type="video/mp4">
-</video>
-
 ### Run app
 
 Install Node.js
@@ -14,7 +10,7 @@ Install Node.js
 ```bash
     cd mini-message-board
     npm install
-    npm start
+    npm run dev
 ```
 Open URL [http://localhost:3000](http://localhost:3000) in your browser.
 
